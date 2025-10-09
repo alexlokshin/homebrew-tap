@@ -5,21 +5,21 @@
 class Barebones < Formula
   desc "Ultra-fast static HTTP server with metrics."
   homepage "https://github.com/alexlokshin/barebones"
-  version "0.4.6"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/alexlokshin/barebones/releases/download/v0.4.6/barebones_0.4.6_darwin_amd64.tar.gz"
-      sha256 "7e5f0d8b1f230ae828f9738779300e1e006281b6e3c808027d23b8e39015762d"
+      url "https://github.com/alexlokshin/barebones/releases/download/v0.5.0/barebones_0.5.0_darwin_amd64.tar.gz"
+      sha256 "ba9b1ec76c0f2952f2b1e76c583869f36985093bc08ec35cfca296c61bfb4648"
 
       def install
         bin.install "barebones"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/alexlokshin/barebones/releases/download/v0.4.6/barebones_0.4.6_darwin_arm64.tar.gz"
-      sha256 "2d2484678b4fa5340a45b611259e5fb52a8fa61f78393d5380f4522017faab8c"
+      url "https://github.com/alexlokshin/barebones/releases/download/v0.5.0/barebones_0.5.0_darwin_arm64.tar.gz"
+      sha256 "a5fe9dee0e0d9375673ddcd738e234a51b46a8c37448b6ddc9d2d91a421311fe"
 
       def install
         bin.install "barebones"
@@ -29,15 +29,15 @@ class Barebones < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alexlokshin/barebones/releases/download/v0.4.6/barebones_0.4.6_linux_amd64.tar.gz"
-      sha256 "e05646af5bab2367b68ae861d59ebf4485e1c5c7806fd4efb97406d74e034392"
+      url "https://github.com/alexlokshin/barebones/releases/download/v0.5.0/barebones_0.5.0_linux_amd64.tar.gz"
+      sha256 "2328b53f764ed6183b480431bd74306e00999948fd436595b8039c25e0309741"
       def install
         bin.install "barebones"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alexlokshin/barebones/releases/download/v0.4.6/barebones_0.4.6_linux_arm64.tar.gz"
-      sha256 "326ec6b39c95f5cf80925a3b6af4edfe15d3493af10d1b4e93c1b4e40fdd8788"
+      url "https://github.com/alexlokshin/barebones/releases/download/v0.5.0/barebones_0.5.0_linux_arm64.tar.gz"
+      sha256 "ee26fb57bd14af19bf330e439b001aa7fdf1520f937f363a2eec90a0551002dc"
       def install
         bin.install "barebones"
       end
